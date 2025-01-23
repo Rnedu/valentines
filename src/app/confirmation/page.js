@@ -35,7 +35,7 @@ export default function Confirmation() {
         numberOfPieces={200}
       />
       <img 
-        src="harinee.jpg"
+        src="harinee.jpeg"
         alt="Valentine's Day Meme"
         style={{
           maxWidth: "30%",
