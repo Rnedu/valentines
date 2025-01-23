@@ -22,10 +22,11 @@ export default function Confirmation() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        height: "100vh",
+        minHeight: "100vh",
         fontFamily: "Comic Sans MS",
         textAlign: "center",
         backgroundColor: "#ffe6e6",
+        padding: "2rem",
       }}
     >
       <Confetti
@@ -34,27 +35,61 @@ export default function Confirmation() {
         recycle={false}
         numberOfPieces={200}
       />
-      <img 
-        src="harinee.jpeg"
-        alt="Valentine's Day Meme"
-        style={{
-          maxWidth: "30%",
-          maxHeight: "40%",
-          marginBottom: "2rem",
-          borderRadius: "10px",
-        }}
-      />
-      <img 
-          src="happy-cat-cat.gif" // Replace with your actual GIF URL
-          alt="Celebration GIF"
+      
+      {/* Image Gallery */}
+      <div style={{
+        display: "flex",
+        justifyContent: "center",
+        gap: "1rem",
+        marginBottom: "2rem",
+        flexWrap: "wrap",
+      }}>
+        <img 
+          src="harinee.jpeg"
+          alt="Valentine's Day Meme 1"
           style={{
-            maxWidth: "30%", // Adjust size as needed
+            width: "30%",
+            maxWidth: "300px",
+            height: "auto",
             borderRadius: "10px",
           }}
         />
+        <img 
+          src="harinee2.jpeg"  // Replace with your second image
+          alt="Valentine's Day Meme 2"
+          style={{
+            width: "30%",
+            maxWidth: "300px",
+            height: "auto",
+            borderRadius: "10px",
+          }}
+        />
+        <img 
+          src="harinee3.jpeg"  // Replace with your third image
+          alt="Valentine's Day Meme 3"
+          style={{
+            width: "30%",
+            maxWidth: "300px",
+            height: "auto",
+            borderRadius: "10px",
+          }}
+        />
+      </div>
+      
+      {/* GIF below */}
+      <img 
+        src="happy-cat-cat.gif"
+        alt="Celebration GIF"
+        style={{
+          maxWidth: "30%",
+          borderRadius: "10px",
+          marginBottom: "2rem",
+        }}
+      />
+      
       <h1 style={{ fontSize: "2rem", color: "#ff4d4d" }}>
-        You make me incredibly happy
-        I feel lucky to have you in my life
+        You make me incredibly happy<br/>
+        I feel lucky to have you in my life<br/>
         hehe we'll have alot of fun
       </h1>
     </main>
